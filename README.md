@@ -16,23 +16,23 @@ In this work, the raw `.dat` files were obtained directly from the official sour
 
 All preprocessing was performed independently to ensure consistency and experimental validity:
 
-- Removal of missing/invalid values (NaN filtering)
-- Selection of 15 valid activity classes
+- Removal of missing/invalid values (NaN filtering)  
+- Selection of 15 valid activity classes  
 - Sliding window segmentation  
   - Window size: 128  
   - Stride: 64  
-- Leave-One-Subject-Out (LOSO) cross-validation setup
-- Optional data augmentation for training balance
+- Leave-One-Subject-Out (LOSO) cross-validation setup  
+- Optional data augmentation for training balance  
 
 ---
 
 ## Dataset Statistics
 
-- Total segments: ~32,000
-- Subjects: 9 (LOSO evaluation protocol)
-- Sampling rate: 100 Hz
-- Input features: Multi-channel IMU sensor signals
-- Task: Multi-class Human Activity Recognition
+- Total segments: ~32,000  
+- Subjects: 9 (LOSO evaluation protocol)  
+- Sampling rate: 100 Hz  
+- Input features: Multi-channel IMU sensor signals  
+- Task: Multi-class Human Activity Recognition  
 
 ---
 
@@ -49,12 +49,15 @@ The same processed dataset is used for both the proposed method (PrivFedHAR) and
 
 ---
 
-## Repository Contents
+## Dataset Access
 
-- Preprocessed LOSO folds  
-- Sliding window segmented data  
-- Augmented training samples (if applicable)  
-- Ready-to-use train/test splits  
+Due to size limitations, the dataset is hosted externally.
+
+You can access it here:
+
+🔗 Google Drive: https://drive.google.com/file/d/1P_7neoQg9JIubZ4gfRGzhjgbrusctuTJ/view?usp=drive_link
+
+Please ensure the link access is set to **"Anyone with the link can view"**.
 
 ---
 
@@ -77,14 +80,3 @@ This repository is released under the MIT License, allowing free use, modificati
 ## Citation
 
 If you use this dataset, please cite the original PAMAP2 dataset:
-
-@article{6246152,
-  title={PAMAP2 Physical Activity Monitoring Dataset},
-  year={2012}
-}
-
----
-
-## Author
-
-Ashifa
